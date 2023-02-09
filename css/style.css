@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif ;
+}
+
+
+/* =========== section interFace =========== */
+
+.bg-img-Machathon {
+    background-image: url(../img/cover\ macathon.png);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    background-attachment: fixed;
+    opacity: 0.75;
+}
+
+
+/* =========== section COMPETE & CONNECT =========== */
+
+.compete .container .card {
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.compete .card .imgContainer {
+    top: -10px;
+    left: 2px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.compete .content {
+    margin-top: -140px;
+    color: #111;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.compete .card:hover .content {
+    opacity: 1;
+    margin-top: -20px;
+    transition-delay: 0.3s;
+}
+
+.compete h2 {
+    font-size: 1.25rem;
+    font-weight: 900;
+
+}
+
+.bg-img-History {
+    background-image: url(../img/bg-\ history.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-img-History p {
+    border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+    border-image-slice: 1;
+}
+
+.bg-img-History h4 {
+    border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+    font-family: 'Fjalla One', sans-serif;
+
+}
+
+/* odd number borders */
+.bg-img-History p:nth-child(odd) {
+    border-right: 3px solid;
+    padding-left: 0;
+}
+
+.bg-img-History p:before {
+    left: 100%;
+    margin-left: -20px;
+}
+
+/* even number borders */
+.bg-img-History p:nth-child(even) {
+    border-left: 3px solid;
+    padding-right: 0;
+}
+
+.bg-img-History p:before {
+    right: 100%;
+    margin-right: -50px;
+}
+
+/* ======== section Our Sponsors ======== */
+
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+.pic-ctn img {
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+.item-Sponsored img:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.item-Sponsored img:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.item-Sponsored img:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.item-Sponsored img:nth-child(5) {
+    animation-delay: 8s;
+}
